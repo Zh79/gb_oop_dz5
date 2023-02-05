@@ -6,7 +6,7 @@ public class Filemanager {
     
     String FILE_PATH_FULL = "export.csv";
     public void fileExport(ArrayList<Phonebook> pb){
-        try(FileWriter writer = new FileWriter(FILE_PATH + FILE_NAME_EXPORT, false))
+        try(FileWriter writer = new FileWriter(FILE_PATH_FULL, false))
         {
             // запись всей строки
 //            String text = "Hello Gold!";
