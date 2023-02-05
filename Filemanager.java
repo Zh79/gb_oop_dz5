@@ -3,10 +3,8 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Filemanager {
-
-    String FILE_PATH = "./src/main/java/org/phonebook/";
-    String FILE_NAME_EXPORT = "export.csv";
-    String FILE_PATH_FULL = FILE_PATH+FILE_NAME_EXPORT;
+    
+    String FILE_PATH_FULL = "export.csv";
     public void fileExport(ArrayList<Phonebook> pb){
         try(FileWriter writer = new FileWriter(FILE_PATH + FILE_NAME_EXPORT, false))
         {
